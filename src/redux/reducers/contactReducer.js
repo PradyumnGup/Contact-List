@@ -7,6 +7,7 @@ const contactReducer = (state = initialState, action) => {
             return action.payload;
         case 'ADD_CONTACT':
             return [...state, action.payload];
+            
         case 'UPDATE_CONTACT':
             const updateState = state.map(contact => contact.id === action.payload.id ? action.payload : contact);
             state = updateState;
