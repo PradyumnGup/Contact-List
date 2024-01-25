@@ -8,6 +8,7 @@ import AddContact from "./components/AddContact";
 import EditContact from "./components/EditContact";
 import { useDispatch } from "react-redux";
 
+
 const App = () => {
     const dispatch = useDispatch();
     useEffect(() => {
